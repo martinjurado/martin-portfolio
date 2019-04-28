@@ -1,0 +1,42 @@
+.header {
+  z-index: 2;
+  height: 525px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+.sub-header {
+  position: absolute;
+  top: 35%;
+  margin-left: 29%;
+  margin-right: 8%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 75px;
+  letter-spacing: -5px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+.title {
+  position: absolute;
+  top: 56%;
+  margin-left: 37%;
+  margin-right: 8%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .sub-header {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sub-header {
+    font-size: 50px;
+  }
+}
