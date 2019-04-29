@@ -1,0 +1,44 @@
+.card {
+  margin-left: 8%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+.sub-trip {
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+}
+
+.sub-desc {
+  position: relative;
+  top: -10px;
+  font-size: 15px;
+}
+
+.store {
+  position: absolute;
+  top: 725px;
+  margin-left: 37%;
+}
+
+.job {
+  position: absolute;
+  top: 725px;
+  margin-left: 66%;
+}
+
+.pup {
+  position: absolute;
+  top: 1025px;
+}
+
+.date {
+  position: absolute;
+  top: 1025px;
+  margin-left: 37%;
+}
+
+.hang {
+  position: absolute;
+  top: 1025px;
+  margin-left: 66%;
+}

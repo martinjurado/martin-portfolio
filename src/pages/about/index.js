@@ -1,9 +1,10 @@
 import React from "react";
+import Aboutsub from "../../components/about-subheader";
 
 function About() {
   return (
     <div>
-      <h2 id="about">ABOUT ME</h2>
+      <Aboutsub />
     </div>
   );
 }
