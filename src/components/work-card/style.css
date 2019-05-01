@@ -28,17 +28,22 @@
 
 .pup {
   position: absolute;
-  top: 1025px;
+  top: 1075px;
 }
 
 .date {
   position: absolute;
-  top: 1025px;
+  top: 1075px;
   margin-left: 37%;
 }
 
 .hang {
   position: absolute;
-  top: 1025px;
+  top: 1075px;
   margin-left: 66%;
+}
+
+.demo {
+  margin-left: 70px;
+  margin-right: 10px;
 }

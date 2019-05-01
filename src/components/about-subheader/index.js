@@ -5,7 +5,7 @@ import { Image, Row, Col } from "react-bootstrap";
 
 function Aboutsub() {
   return (
-    <div className="container text-center">
+    <div className="aboutcontainer text-center img-fluid">
       <h2 className="about">ABOUT ME</h2>
       <Image src={Me} className="me" thumbnail />
       <p className="mesub">I am a software developer based in New York.</p>
@@ -20,7 +20,7 @@ function Aboutsub() {
           </p>
         </Col>
         <Col>
-          <p className="mesub2">
+          <p className="mesub3">
             I love listening to music during my spare time. I am in-love with Japanese 
             culture and reading Business books when I am not coding. 
           </p>

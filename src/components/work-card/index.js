@@ -1,85 +1,306 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import "./style.css";
+import "./imagehover.css";
 import Trip from "../../images/trip.png";
 import Store from "../../images/store.png";
 import Job from "../../images/job.png";
 import Pup from "../../images/pup.png";
 import Dating from "../../images/date.png";
 import Hang from "../../images/hang.png";
+import { ButtonToolbar, Button, Row } from "react-bootstrap";
 
 function Workcard(props) {
-  const {onClick, handleClose} = props
+  const { onClick, handleClose } = props;
   return (
     <div>
-      <Card style={{ width: "20rem", height: "16rem" }} onClick={onClick} handleClose={handleClose}>
+      <Card style={{ width: "20rem", height: "19rem" }}>
         <Card.Body>
-          <Card.Img variant="top" src={Trip} style={{ height: "10rem" }} />
+          <figure className="imghvr-push-up">
+            <img
+              alt="trip"
+              variant="top"
+              src={Trip}
+              style={{ height: "12rem", width: "20rem" }}
+            />
+            <figcaption>
+              <p>
+                <i>
+                  React App that generates an itinerary and can be updated to
+                  keep up with last minute changes.
+                </i>
+              </p>
+            </figcaption>
+          </figure>
           <div className="text-center">
             <Card.Title className="sub-trip">TRIP PAL</Card.Title>
-            <Card.Text className="sub-desc">
-              Full Stack Web Developer
-            </Card.Text>
+            <Row>
+              <ButtonToolbar>
+                <Button
+                  className="demo"
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://boiling-sea-88261.herokuapp.com/"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-globe" />
+                </Button>
+              </ButtonToolbar>
+              <ButtonToolbar>
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/agatha12/Travel-App"
+                  target="_blank"
+                >
+                  Github <i class="fab fa-github" />
+                </Button>
+              </ButtonToolbar>
+            </Row>
           </div>
         </Card.Body>
       </Card>
-      <Card className="store" style={{ width: "20rem", height: "16rem" }} onClick={props.onClick} >
+      <Card
+        className="store"
+        style={{ width: "20rem", height: "19rem" }}
+        onClick={props.onClick}
+      >
         <Card.Body>
-          <Card.Img variant="top" src={Store} style={{ height: "10rem" }} />
+          <figure className="imghvr-push-up">
+            <img
+              variant="top"
+              src={Store}
+              style={{ height: "12rem", width: "20rem" }}
+            />
+            <figcaption>
+              <p>
+                <i>
+                  E-commerce app that displays items through a database and
+                  incorporates full CRUD capabilities.
+                </i>
+              </p>
+            </figcaption>
+          </figure>
           <div className="text-center">
             <Card.Title className="sub-trip">Dev Taukx</Card.Title>
-            <Card.Text className="sub-desc">
-              Full Stack Web Developer
-            </Card.Text>
+            <Row>
+              <ButtonToolbar>
+                <Button
+                  className="demo"
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://frozen-atoll-67387.herokuapp.com/"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-globe" />
+                </Button>
+              </ButtonToolbar>
+              <ButtonToolbar>
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/agatha12/Shopping-Site"
+                  target="_blank"
+                >
+                  Github <i class="fab fa-github" />
+                </Button>
+              </ButtonToolbar>
+            </Row>
           </div>
         </Card.Body>
       </Card>
-      <Card className="job" style={{ width: "20rem", height: "16rem" }} onClick={props.onClick}>
+      <Card
+        className="job"
+        style={{ width: "20rem", height: "19rem" }}
+        onClick={props.onClick}
+      >
         <Card.Body>
-          <Card.Img variant="top" src={Job} style={{ height: "10rem" }} />
+          <figure className="imghvr-push-up">
+            <img
+              variant="top"
+              src={Job}
+              style={{ height: "12rem", width: "17rem" }}
+            />
+            <figcaption>
+              <p>
+                <i>
+                  Job searching app that helps users find openings in the tech
+                  industry.
+                </i>
+              </p>
+            </figcaption>
+          </figure>
+
           <div className="text-center">
             <Card.Title className="sub-trip">Dream Job Finder</Card.Title>
-            <Card.Text className="sub-desc">
-              Front End Developer
-            </Card.Text>
+            <Row>
+              <ButtonToolbar>
+                <Button
+                  className="demo"
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://martinjurado.github.io/DreamJob-Finder/"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-globe" />
+                </Button>
+              </ButtonToolbar>
+              <ButtonToolbar>
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/TwentyVT/crewnecksweatercrew"
+                  target="_blank"
+                >
+                  Github <i class="fab fa-github" />
+                </Button>
+              </ButtonToolbar>
+            </Row>
           </div>
         </Card.Body>
       </Card>
-      <Card className="pup" style={{ width: "20rem", height: "16rem" }}onClick={props.onClick}>
+
+      <Card
+        className="pup"
+        style={{ width: "20rem", height: "19rem" }}
+        onClick={props.onClick}
+      >
         <Card.Body>
-          <Card.Img variant="top" src={Pup} style={{ height: "10rem" }} />
+          <figure className="imghvr-push-up">
+            <img
+              variant="top"
+              src={Pup}
+              style={{ height: "12rem", width: "20rem" }}
+            />
+            <figcaption>
+              <p>
+                <i>
+                  React App that allows user to view and like dogs. User can
+                  also search dog breeds through a 3rd Party API call.
+                </i>
+              </p>
+            </figcaption>
+          </figure>
           <div className="text-center">
             <Card.Title className="sub-trip">TinDog</Card.Title>
-            <Card.Text className="sub-desc">
-              Front End Developer
-            </Card.Text>
+            <Row>
+              <ButtonToolbar>
+                <Button
+                  className="demo"
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://enigmatic-everglades-35556.herokuapp.com/"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-globe" />
+                </Button>
+              </ButtonToolbar>
+              <ButtonToolbar>
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/martinjurado/Pupster-React-App"
+                  target="_blank"
+                >
+                  Github <i class="fab fa-github" />
+                </Button>
+              </ButtonToolbar>
+            </Row>
           </div>
         </Card.Body>
       </Card>
-      <Card className="date" style={{ width: "20rem", height: "16rem" }}>
+      <Card className="date" style={{ width: "20rem", height: "19rem" }}>
         <Card.Body>
-          <Card.Img variant="top" src={Dating} style={{ height: "10rem" }} />
+          <figure className="imghvr-push-up">
+            <img
+              variant="top"
+              src={Dating}
+              style={{ height: "12rem", width: "17rem" }}
+            />
+            <figcaption>
+              <p>
+                <i>
+                  Celebrity Dating App that matches your test scores with a
+                  celebrity.
+                </i>
+              </p>
+            </figcaption>
+          </figure>
           <div className="text-center">
             <Card.Title className="sub-trip">Celeb Matcher</Card.Title>
-            <Card.Text className="sub-desc">
-              Full Stack Web Developer
-            </Card.Text>
+            <Row>
+              <ButtonToolbar>
+                <Button
+                  className="demo"
+                  variant="outline-primary"
+                  size="sm"
+                  href=""
+                  href="https://arcane-retreat-18762.herokuapp.com/"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-globe" />
+                </Button>
+              </ButtonToolbar>
+              <ButtonToolbar>
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/martinjurado/Friend-Finder-Week14"
+                  target="_blank"
+                >
+                  Github <i class="fab fa-github" />
+                </Button>
+              </ButtonToolbar>
+            </Row>
           </div>
         </Card.Body>
       </Card>
-      <Card className="hang" style={{ width: "20rem", height: "16rem" }}>
+      <Card className="hang" style={{ width: "20rem", height: "19rem" }}>
         <Card.Body>
-          <Card.Img variant="top" src={Hang} style={{ height: "10rem" }} />
+          <figure className="imghvr-push-up">
+            <img
+              variant="top"
+              src={Hang}
+              style={{ height: "12rem", width: "17rem" }}
+            />
+            <figcaption>
+              <p>
+                <i>
+                  Hang Man application that requires guessing the name of the character with limited lives.
+                </i>
+              </p>
+            </figcaption>
+          </figure>
+
           <div className="text-center">
             <Card.Title className="sub-trip">Hangman</Card.Title>
-            <Card.Text className="sub-desc">
-              Front End Developer
-            </Card.Text>
+            <Row>
+              <ButtonToolbar>
+                <Button
+                  className="demo"
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://martinjurado.github.io/WordGuessing-Game-Week4/"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-globe" />
+                </Button>
+              </ButtonToolbar>
+              <ButtonToolbar>
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/martinjurado/WordGuessing-Game-Week4"
+                  target="_blank"
+                >
+                  Github <i class="fab fa-github" />
+                </Button>
+              </ButtonToolbar>
+            </Row>
           </div>
         </Card.Body>
       </Card>
     </div>
-    
   );
 }
 
