@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Me from "../../images/me.jpg";
+import Me from "../../images/big head.png";
 import { Image, Row, Col } from "react-bootstrap";
 
 function Aboutsub() {
@@ -9,7 +9,7 @@ function Aboutsub() {
       <h2 className="about">ABOUT ME</h2>
       <Image src={Me} className="me" thumbnail />
       <p className="mesub">I am a software developer based in New York.</p>
-      <Row>
+      <Row className="mesub-container">
         <Col>
           <p className="mesub2">
             I am highly skilled in building aesthetically creative and
@@ -21,9 +21,17 @@ function Aboutsub() {
         </Col>
         <Col>
           <p className="mesub3">
-            I love listening to music during my spare time. I am in-love with Japanese 
-            culture and reading Business books when I am not coding. 
+            I love listening to music during my spare time. I am in-love with
+            Japanese culture and reading Business books when I am not coding.
           </p>
+        </Col>
+      </Row>
+
+      <p className="mesub4">Let's Connect!</p>
+      <Row>
+        <Col>
+          <a href="https://www.linkedin.com/in/martin-benedict-jurado/" target="_blank" className="linkedin hvr-grow"><i className="fab fa-linkedin-in fa-2x"/></a>
+          <a href="https://github.com/martinjurado" target="_blank" className="githublink hvr-grow"><i className="fab fa-github fa-2x"/></a>
         </Col>
       </Row>
     </div>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
 .about {
   font-family: "Work Sans", sans-serif;
-  margin-top: 30%;
+  margin-top: 35%;
   margin-bottom: 5%;
   font-size: 36px;
 }
@@ -13,11 +13,15 @@
 }
 
 .mesub {
-  color: #008B8B;
+  color: #4169E1;
   font-family: "Work Sans", sans-serif;
   font-size: 25px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   
+}
+
+.mesub-container {
+  margin-bottom: 2%;
 }
 
 .mesub2 {
@@ -31,8 +35,40 @@
   margin-right: 50px;
 }
 
+.mesub4 {
+  color: #4169E1;
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+}
+
 .aboutcontainer {
   background-color: #F8F8F8;
   height: 600px;
   margin-bottom: 5%;
+}
+
+.linkedin {
+  padding-right: 2%;
+  color: #4169E1;
+}
+
+.githublink {
+  color: #4169E1;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
 }

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+.skillsub {
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    margin-bottom: 5%;
+}
+
+.skillsub2 {
+    margin-bottom: 3%;
+}
+
+.frontend {
+    font-family: "Work Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    margin-top: 4%;
+}
+
+.skillset {
+    text-align: left;
+    margin-left: 40%;
+}
+
+.skillset2 {
+    margin-left: 43%; 
+}
+
+.html {
+    margin-right: 1%;
+    color: lightgray;
+}
+
+.html:hover {
+    color: #FF4500;
+}
+
+.css {
+    margin-right: 1%;
+    color: lightgray;
+}
+
+.css:hover {
+    color: #00BFFF;
+}
+
+.bootstrap {
+    margin-right: 1%;
+    color: lightgray;
+}
+
+.bootstrap:hover {
+    color: 	#8A2BE2;
+}
+
+.js {
+    margin-right: 1%;
+    color: lightgray;
+}
+
+.js:hover {
+    color: #FFD700;
+}
+
+.react {
+    margin-right: 1%;
+    color: lightgray;
+}
+
+.react:hover {
+    color: lightblue;
+}
+
+.node {
+    margin-right: 1%;
+    color: lightgray;
+}
+
+.node:hover {
+    color: 	#228B22;
+}
+
+.skill-list {
+    margin-top: 3%;
+}

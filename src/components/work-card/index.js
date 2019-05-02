@@ -11,7 +11,6 @@ import Hang from "../../images/hang.png";
 import { ButtonToolbar, Button, Row } from "react-bootstrap";
 
 function Workcard(props) {
-  const { onClick, handleClose } = props;
   return (
     <div>
       <Card style={{ width: "20rem", height: "19rem" }}>
