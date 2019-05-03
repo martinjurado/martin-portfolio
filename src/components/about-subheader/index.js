@@ -30,8 +30,8 @@ function Aboutsub() {
       <p className="mesub4">Let's Connect!</p>
       <Row>
         <Col>
-          <a href="https://www.linkedin.com/in/martin-benedict-jurado/" target="_blank" className="linkedin hvr-grow"><i className="fab fa-linkedin-in fa-2x"/></a>
-          <a href="https://github.com/martinjurado" target="_blank" className="githublink hvr-grow"><i className="fab fa-github fa-2x"/></a>
+          <a href="https://www.linkedin.com/in/martin-benedict-jurado/" target="_blank" className="linkedin hvr-grow" rel="noopener noreferrer"><i className="fab fa-linkedin-in fa-2x"/></a>
+          <a href="https://github.com/martinjurado" target="_blank" className="githublink hvr-grow" rel="noopener noreferrer"><i className="fab fa-github fa-2x"/></a>
         </Col>
       </Row>
     </div>

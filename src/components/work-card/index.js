@@ -67,6 +67,7 @@ function Workcard(props) {
         <Card.Body>
           <figure className="imghvr-push-up">
             <img
+              alt="top"
               variant="top"
               src={Store}
               style={{ height: "12rem", width: "20rem" }}
@@ -116,6 +117,7 @@ function Workcard(props) {
         <Card.Body>
           <figure className="imghvr-push-up">
             <img
+              alt="job"
               variant="top"
               src={Job}
               style={{ height: "12rem", width: "17rem" }}
@@ -167,6 +169,7 @@ function Workcard(props) {
         <Card.Body>
           <figure className="imghvr-push-up">
             <img
+            alt="pup"
               variant="top"
               src={Pup}
               style={{ height: "12rem", width: "20rem" }}
@@ -212,6 +215,7 @@ function Workcard(props) {
         <Card.Body>
           <figure className="imghvr-push-up">
             <img
+            alt="dates"
               variant="top"
               src={Dating}
               style={{ height: "12rem", width: "17rem" }}
@@ -233,7 +237,7 @@ function Workcard(props) {
                   className="demo"
                   variant="outline-primary"
                   size="sm"
-                  href=""
+                  
                   href="https://arcane-retreat-18762.herokuapp.com/"
                   target="_blank"
                 >
@@ -258,6 +262,7 @@ function Workcard(props) {
         <Card.Body>
           <figure className="imghvr-push-up">
             <img
+            alt="hanging"
               variant="top"
               src={Hang}
               style={{ height: "12rem", width: "17rem" }}
@@ -265,7 +270,8 @@ function Workcard(props) {
             <figcaption>
               <p>
                 <i>
-                  Hang Man application that requires guessing the name of the character with limited lives.
+                  Hang Man application that requires guessing the name of the
+                  character with limited lives.
                 </i>
               </p>
             </figcaption>
