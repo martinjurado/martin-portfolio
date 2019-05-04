@@ -1,5 +1,5 @@
 import React from "react";
-import Ny from "../../images/header.jpg";
+import Ny from "../../images/header 3.jpg";
 import "./style.css";
 
 function Header() {

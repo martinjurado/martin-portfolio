@@ -3,7 +3,7 @@ import "./style.css";
 
 function Skillsub() {
   return (
-    <div className="text-center">
+    <div className="text-center skillcontainer">
       <h2 className="skillsub">SKILLS</h2>
       <p className="skillsub2">
         I am a Full Stack Web Developer and a recent graduate of Rutgers Web

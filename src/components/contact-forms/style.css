@@ -1,0 +1,35 @@
+.footpic {
+  z-index: 1;
+  height: 578px;
+}
+
+.contact-container {
+  z-index: 2;
+  background-color: white;
+  opacity: 0.88;
+  position: absolute;
+  left: 50px;
+  top: 2700px;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1%;
+  
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+.contact-head {
+  font-family: "Work Sans", sans-serif;
+  margin-top: 35%;
+  margin-bottom: 10%;
+  font-size: 36px;
+}
+
+.contactsub {
+  color: #4169E1;
+  font-family: "Work Sans", sans-serif;
+  font-size: 30px;
+  
+}
