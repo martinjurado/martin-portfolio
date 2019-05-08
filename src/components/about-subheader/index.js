@@ -5,7 +5,7 @@ import { Image, Row, Col } from "react-bootstrap";
 
 function Aboutsub() {
   return (
-    <div className="aboutcontainer text-center img-fluid">
+    <div className="aboutcontainer text-center img-fluid" id="about">
       <h2 className="about">ABOUT ME</h2>
       <Image src={Me} className="me" thumbnail />
       <p className="mesub">I am a software developer based in New York.</p>

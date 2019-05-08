@@ -7,7 +7,7 @@ class Work extends Component {
 
   render() {
     return (
-      <div>
+      <div id="work">
         <Subheader />
         
         <Workcard/>

@@ -1,13 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./style.css";
+
 
 function Nav() {
   return (
-    <div>
+    <div className="link-wrapper">
       <nav>
-        <Link to="/">Home </Link>
-
-        <Link to="/about">About</Link>
+        <a
+          href="#work"
+          className="work hvr-grow"
+          rel="noopener noreferrer"
+        >
+          work
+        </a>
+        <a
+          href="#about"
+          className="aboutme hvr-grow"
+          rel="noopener noreferrer"
+        >
+          about me
+        </a>
+        <a
+          href="#skills"
+          className="skills hvr-grow"
+          rel="noopener noreferrer"
+        >
+          skills
+        </a>
+        <a
+          href="#contact"
+          className="contact hvr-grow"
+          rel="noopener noreferrer"
+        >
+          contact
+        </a>
       </nav>
     </div>
   );

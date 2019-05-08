@@ -1,0 +1,59 @@
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: white;
+}
+
+.link-wrapper {
+  position: absolute;
+  top: 5%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+.work {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-left: 50px;
+}
+
+.aboutme {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+}
+
+.skills {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+}
+
+.contact {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}

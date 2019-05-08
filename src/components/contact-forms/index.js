@@ -6,7 +6,7 @@ import "./style.css";
 function Contactsub(props) {
   const {handleSubmit} = props
   return (
-    <div className="text-center">
+    <div className="text-center" id="contact">
       <Image src={Footpic} alt="foot" className="w-100 footpic" />
       <div className="contact-container">
         <h2 class="contact-head">CONTACT</h2>
