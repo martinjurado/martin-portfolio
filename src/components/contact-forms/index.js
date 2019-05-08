@@ -3,14 +3,15 @@ import Footpic from "../../images/header.jpg";
 import { Image, Form } from "react-bootstrap";
 import "./style.css";
 
-function Contactsub() {
+function Contactsub(props) {
+  const {handleSubmit} = props
   return (
     <div className="text-center">
       <Image src={Footpic} alt="foot" className="w-100 footpic" />
       <div className="contact-container">
         <h2 class="contact-head">CONTACT</h2>
         <p className="contactsub">Let's work together!</p>
-        <Form>
+        <Form id="contact-form" method="POST">
           <Form.Group>
             <input type="text" className="form-control" id="name" placeholder="Name or Company"/>
           </Form.Group>
@@ -31,7 +32,7 @@ function Contactsub() {
               placeholder="Your Message"
             />
           </Form.Group>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Submit</button>
         </Form>
       </div>
     </div>

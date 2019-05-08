@@ -2,13 +2,21 @@ import React, { Component } from "react";
 import Contactsub from "../../components/contact-forms";
 
 class Contact extends Component {
-    render() {
-        return (
-            <div>
-                <Contactsub />
-            </div>
-        )
-    }
+  handleSubmit = e => {
+    e.preventDefault();
+    alert("Message Sent!");
+  };
+
+  resetForm = () => {
+    document.getElementById('contact-form').reset();
+  }
+  render() {
+    return (
+      <div>
+        <Contactsub handleSubmit={this.handleSubmit} />
+      </div>
+    );
+  }
 }
 
-export default Contact
+export default Contact;
