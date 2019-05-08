@@ -12,7 +12,7 @@ import { ButtonToolbar, Button, Row } from "react-bootstrap";
 
 function Workcard(props) {
   return (
-    <div>
+    <div className="work-wrapper">
       <Card style={{ width: "20rem", height: "19rem" }}>
         <Card.Body>
           <figure className="imghvr-push-up">
