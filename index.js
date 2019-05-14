@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-
+const creds = require("./creds")
 const app = express();
 
 require("dotenv").config()
@@ -27,8 +27,8 @@ app.post('/api/form', (req, res) => {
             service: "Gmail",
             port: 587,
             auth: {
-                user: process.env.USER,
-                pass: process.env.PASS
+                user: creds.USER,
+                pass: creds.PASS
             }
         })
 
