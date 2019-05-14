@@ -4,7 +4,7 @@ import "./style.css";
 
 function Nav() {
   return (
-    <div className="link-wrapper animated fadeIn delay-1s">
+    <div className="link-wrapper animated fadeIn delay-1s w-100">
       <nav>
         <a
           href="#work"

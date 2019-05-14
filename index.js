@@ -1,7 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+
 const app = express();
+
+require("dotenv").config()
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,8 +27,8 @@ app.post('/api/form', (req, res) => {
             service: "Gmail",
             port: 587,
             auth: {
-                user: 'juradomartinbenedict@gmail.com',
-                pass: 'mbvj1127'
+                user: process.env.USER,
+                pass: process.env.PASS
             }
         })
 
@@ -42,7 +46,7 @@ app.post('/api/form', (req, res) => {
                 return console.log(err)
             }
             console.log("Message sent: %s", info.message)
-            console.log("Message URL: %s", nodemailer.getTestMessageUrl)
+            console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
         })
     })
 })

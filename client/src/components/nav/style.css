@@ -3,12 +3,13 @@ a {
 }
 
 a:hover {
-  color: 	#00BFFF;
+  color: white;
 }
 
 .link-wrapper {
   position: absolute;
   top: 5%;
+  background: rgba(133, 207, 226, 0.932);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
@@ -16,29 +17,29 @@ a:hover {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
-  color: black;
-  padding-left: 50px;
+  color: white;
+  margin-left: 190px;
 }
 
 .aboutme {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
-  color: black;
-  padding-left: 30px;
+  color: white;
+  margin-left: 210px;
 }
 
 .skills {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
-  color: black;
-  padding-left: 30px;
+  color: white;
+  margin-left: 210px;
 }
 
 .contact {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
-  color: black;
-  padding-left: 30px;
+  color: white;
+  margin-left: 210px;
 }
 
 .hvr-grow {
