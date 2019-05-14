@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const creds = require("./creds")
 const app = express();
 
-require("dotenv").config()
+
 
 
 app.use(bodyParser.json());
