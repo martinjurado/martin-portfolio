@@ -4,9 +4,6 @@ const nodemailer = require("nodemailer");
 const creds = require("./creds")
 const app = express();
 
-
-
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
