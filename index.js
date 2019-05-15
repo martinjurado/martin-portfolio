@@ -2,21 +2,18 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
-const path = require("path");
-const creds = require("./creds");
+require('dotenv').config()
+
 const app = express();
 
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
+
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// Heroku
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// app.get("*", (request, response) => {
-//   response.sendFile(path.join(__dirname, "client/public", "index.html"));
-// });
 
 app.post("/api/form", (req, res) => {
   nodemailer.createTestAccount((err, account) => {
@@ -34,8 +31,8 @@ app.post("/api/form", (req, res) => {
       service: "Gmail",
       port: 587,
       auth: {
-        user: creds.USER,
-        pass: creds.PASS
+        user: process.env.USER,
+        pass: process.env.PASS
       }
     });
 
