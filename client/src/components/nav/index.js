@@ -1,40 +1,21 @@
 import React from "react";
 import "./style.css";
-
+import { Dropdown } from "react-bootstrap";
 
 function Nav() {
   return (
-    <div className="link-wrapper animated fadeIn delay-1s w-100">
-      <nav>
-        <a
-          href="#work"
-          className="work hvr-grow"
-          rel="noopener noreferrer"
-        >
-          work
-        </a>
-        <a
-          href="#about"
-          className="aboutme hvr-grow"
-          rel="noopener noreferrer"
-        >
-          about me
-        </a>
-        <a
-          href="#skills"
-          className="skills hvr-grow"
-          rel="noopener noreferrer"
-        >
-          skills
-        </a>
-        <a
-          href="#contact"
-          className="contact hvr-grow"
-          rel="noopener noreferrer"
-        >
-          contact
-        </a>
-      </nav>
+    <div className="link-wrapper animated fadeIn delay-1s">
+      <Dropdown>
+        <Dropdown.Toggle variant="info" id="dropdown-basic">
+        <i class="fas fa-bars"/>
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#work" className="work">Work</Dropdown.Item>
+          <Dropdown.Item href="#about" className="aboutme">About Me</Dropdown.Item>
+          <Dropdown.Item href="#skills" className="skills">Skills</Dropdown.Item>
+          <Dropdown.Item href="#contact" className="contact">Contact</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </div>
   );
 }
