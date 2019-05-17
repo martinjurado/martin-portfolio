@@ -1,5 +1,5 @@
 import React from "react";
-import Ny from "../../images/ph.jpg";
+import Ny from "../../images/header 4.jpg";
 import Nav from "../nav/index";
 import "./style.css";
 import StickyHeader from "react-sticky-header";
